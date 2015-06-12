@@ -9,14 +9,14 @@ Pod::Spec.new do |s|
   
 
   s.author             = { "王顺" => "360752546@qq.com" }
-  s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "6.0"
   
   s.source       = { :git => "https://github.com/Shunzi007/WSDataRequest.git", :tag => s.version.to_s }
 
-  s.source_files  = "WSControl/*.{h,m}"
+  s.source_files  = "WSDataRequest/*.{h,m}"
   
 
-  s.frameworks  = "UIKit", 'Foundation'
-  s.dependency 'AFNetworking'
+  s.frameworks  = "UIKit", "Foundation"
+  s.dependency "AFNetworking", "~> 2.5.4"
 
-end 
+end
