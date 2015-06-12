@@ -7,7 +7,7 @@
 //
 
 #import "WSWeatherRequest.h"
-#import <Mantle.h>
+#import "WSReportModel.h"
 /*
  http://route.showapi.com/9-2?showapi_appid=187&showapi_sign=simple_11be041a6d864c849b7e17d75ec663d3&areaid=101291401&showapi_timestamp=2014-11-1414:22:39
  */
@@ -18,13 +18,42 @@
     self = [super init];
     if (self) {
         self.requestURL = @"http://route.showapi.com/9-2";
-        self.type = WSDataRequestTypeGet;
+//        self.path =@"/9-2";
+        self.type = WSDataRequestTypePost;
+//        self.timeOut = 0.01;
     }
     return self;
 }
 
+- (NSDictionary *)baseParameters {
+    return @{
+             @"showapi_appid"     : @"187",
+             @"showapi_sign"      : @"simple_11be041a6d864c849b7e17d75ec663d3"
+             };
+}
+
+- (NSDictionary *)jsonParameters {
+    return @{
+             @"areaid"            : @"101291401",
+             @"showapi_timestamp" : @"2015-6-1200:00:00",
+             };
+}
+
+
 - (id)responseParse:(id)data {
-    return nil;
+    if (![data isKindOfClass:[NSDictionary class]]) {
+        return [WSDataRequest WSDataRequestErrorWithReason:@"接口错误"];
+    }
+    if ([[data objectForKey:@"showapi_res_error"] length]) {
+        return [WSDataRequest WSDataRequestErrorWithReason:[data objectForKey:@"showapi_res_error"]];
+    }
+    NSError *err = nil;
+    NSDictionary *dataDict = [data objectForKey:@"showapi_res_body"];
+    WSReportModel *report = [MTLJSONAdapter modelOfClass:[WSReportModel class] fromJSONDictionary:dataDict error:&err];
+    if (err) {
+        return err;
+    }
+    return report;
 }
 
 

@@ -8,7 +8,17 @@
 
 #import "WSDataRequest.h"
 NSString *const WSErrorDomain = @"WSDataRequestError";
-CGFloat   const OPRequstTimeoutInterval = 5.0;
+CGFloat   const WSRequstTimeoutInterval = 5.0;
+
+@interface WSDataRequest ()
+
+@property (nonatomic, strong) AFHTTPResponseSerializer *responseSerializer;
+@property (nonatomic, strong) AFHTTPRequestSerializer  *requestSerializer;
+@property (nonatomic, strong) NSSet *acceptableContentTypes;
+@property (nonatomic, strong) id requestParameters;
+
+
+@end
 
 @implementation WSDataRequest
 
@@ -22,6 +32,8 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
     self = [super init];
     if (self) {
         self.type = WSDataRequestTypeGet;
+        self.timeOut = WSRequstTimeoutInterval;
+        self.path = @"";
     }
     return self;
 }
@@ -32,13 +44,39 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
     if (self) {
         self.type = WSDataRequestTypeGet;
         self.requestURL = url;
+        self.path = @"";
+
     }
     return self;
 }
 
 - (void)buildRequest
 {
+    if (!self.path) {
+        self.path = @"";
+    }
+    if (!self.timeOut) {
+        self.timeOut = WSRequstTimeoutInterval;
+    }
+    self.requestURL = [self.requestURL stringByAppendingString:self.path];
     
+    NSMutableDictionary *param = [NSMutableDictionary dictionaryWithDictionary:[self baseParameters]];
+    
+    // json参数
+    NSDictionary *jsonParam = [self jsonParameters];
+    if (jsonParam) {
+        [param addEntriesFromDictionary:jsonParam];
+    }
+    self.requestParameters = [NSDictionary dictionaryWithDictionary:param];
+
+}
+
+- (NSDictionary *)baseParameters {
+    return nil;
+}
+
+- (NSDictionary *)jsonParameters {
+    return nil;
 }
 
 - (id)responseParse:(id)data
@@ -57,7 +95,7 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
         [self sendPost:response];
     }
     else {
-        NSError *err = [self WSDataRequestErrorWithReason:@"不支持的请求类型"];
+        NSError *err = [WSDataRequest WSDataRequestErrorWithReason:@"不支持的请求类型"];
         response(nil, err);
     }
 }
@@ -76,15 +114,19 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain", @"text/html", @"application/json", nil];
     }
     
-    manager.requestSerializer.timeoutInterval = OPRequstTimeoutInterval;
+    manager.requestSerializer.timeoutInterval = self.timeOut;
     
     [manager GET:self.requestURL parameters:self.requestParameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         id data = [self responseParse:responseObject];
         if (nil != data) {
-            responese(data, nil);
+            if ([data isKindOfClass:[NSError class]]) {
+                responese(nil, data);
+            }else {
+                responese(data, nil);
+            }
         }
         else {
-            NSError *err = [self WSDataRequestErrorWithReason:@"数据解析错误"];
+            NSError *err = [WSDataRequest WSDataRequestErrorWithReason:@"数据解析错误"];
             responese(nil, err);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -111,14 +153,18 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
         manager.requestSerializer = _requestSerializer;
     }
     
-    manager.requestSerializer.timeoutInterval = OPRequstTimeoutInterval;
+    manager.requestSerializer.timeoutInterval = self.timeOut;
     [manager POST:self.requestURL parameters:self.requestParameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        id parsedData = [self responseParse:responseObject];
-        if (nil != parsedData) {
-            responese(parsedData, nil);
+        id data = [self responseParse:responseObject];
+        if (nil != data) {
+            if ([data isKindOfClass:[NSError class]]) {
+                responese(nil, data);
+            }else {
+                responese(data, nil);
+            }
         }
         else {
-            NSError *err = [self WSDataRequestErrorWithReason:@"数据解析错误"];
+            NSError *err = [WSDataRequest WSDataRequestErrorWithReason:@"数据解析错误"];
             responese(nil, err);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -126,7 +172,7 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
     }];
 }
 
-- (NSError *)WSDataRequestErrorWithReason:(NSString *)reason {
++ (NSError *)WSDataRequestErrorWithReason:(NSString *)reason {
     return [NSError errorWithDomain:WSErrorDomain code:-1 userInfo:@{NSLocalizedFailureReasonErrorKey: reason}];
 }
 

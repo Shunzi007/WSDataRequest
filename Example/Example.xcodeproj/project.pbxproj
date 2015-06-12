@@ -15,6 +15,7 @@
 		630031921B29C4700021677D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630031901B29C4700021677D /* LaunchScreen.xib */; };
 		6300319E1B29C4700021677D /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300319D1B29C4700021677D /* ExampleTests.m */; };
 		630031A91B29C4DE0021677D /* WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 630031A81B29C4DE0021677D /* WSDataRequest.m */; };
+		634299241B2B1DDB004EA287 /* WSReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 634299231B2B1DDB004EA287 /* WSReportModel.m */; };
 		63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */; };
 		63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */; };
 		63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF45711B2A8E4500C8CD2C /* WSCityModel.m */; };
@@ -49,6 +50,8 @@
 		6300319D1B29C4700021677D /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		630031A71B29C4DE0021677D /* WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSDataRequest.h; path = ../WSDataRequest/WSDataRequest.h; sourceTree = "<group>"; };
 		630031A81B29C4DE0021677D /* WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSDataRequest.m; path = ../WSDataRequest/WSDataRequest.m; sourceTree = "<group>"; };
+		634299221B2B1DDB004EA287 /* WSReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSReportModel.h; sourceTree = "<group>"; };
+		634299231B2B1DDB004EA287 /* WSReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSReportModel.m; sourceTree = "<group>"; };
 		63FF456A1B2A819D00C8CD2C /* WSWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWeatherRequest.h; sourceTree = "<group>"; };
 		63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWeatherRequest.m; sourceTree = "<group>"; };
 		63FF456D1B2A8DBF00C8CD2C /* WSWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWeatherModel.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				63FF456A1B2A819D00C8CD2C /* WSWeatherRequest.h */,
 				63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */,
+				634299221B2B1DDB004EA287 /* WSReportModel.h */,
+				634299231B2B1DDB004EA287 /* WSReportModel.m */,
 				63FF456D1B2A8DBF00C8CD2C /* WSWeatherModel.h */,
 				63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */,
 				63FF45701B2A8E4500C8CD2C /* WSCityModel.h */,
@@ -315,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */,
+				634299241B2B1DDB004EA287 /* WSReportModel.m in Sources */,
 				6300318A1B29C4700021677D /* ViewController.m in Sources */,
 				63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */,
 				630031871B29C4700021677D /* AppDelegate.m in Sources */,

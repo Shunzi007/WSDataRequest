@@ -20,15 +20,19 @@ typedef enum {
 
 @property (nonatomic, assign) WSDataRequestType type;
 @property (nonatomic, copy)   NSString *requestURL;
-@property (nonatomic, strong) id requestParameters;
-@property (nonatomic, strong) AFHTTPResponseSerializer *responseSerializer;
-@property (nonatomic, strong) AFHTTPRequestSerializer  *requestSerializer;
-@property (nonatomic, strong) NSSet *acceptableContentTypes;
+@property (nonatomic, copy)   NSString *path;
+@property (nonatomic, assign) double timeOut;
 
+
++ (NSError *)WSDataRequestErrorWithReason:(NSString *)reason;
+
++ (instancetype)request;
 - (id)initWithURL:(NSString *)url;
-- (void)buildRequest;
+
+- (NSDictionary *)baseParameters;
+- (NSDictionary *)jsonParameters;
+
 - (void)sendRequest:(WSDataResponseBlock)response;
 - (id)responseParse:(id)data;
-+ (instancetype)request;
 
 @end

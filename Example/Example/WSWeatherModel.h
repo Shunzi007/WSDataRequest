@@ -7,7 +7,14 @@
 //
 
 #import "MTLModel.h"
+#import <Mantle.h>
 
-@interface WSWeatherModel : MTLModel
+@interface WSWeatherModel : MTLModel <MTLJSONSerializing>
+
+@property (nonatomic, strong) NSString *day_weather;
+@property (nonatomic, strong) NSString *night_weather;
+@property (nonatomic, strong) NSString *day_air_temperature;
+@property (nonatomic, strong) NSString *night_air_temperature;
+
 
 @end

@@ -10,4 +10,14 @@
 
 @implementation WSCityModel
 
++(NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"cityName"        : @"c3",
+             @"cityCode"        : @"c1",
+             @"provinceName"    : @"c7",
+             @"longitude"       : @"longitude",
+             @"latitude"        : @"latitude",
+             };
+}
+
 @end

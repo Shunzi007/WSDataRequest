@@ -10,4 +10,13 @@
 
 @implementation WSWeatherModel
 
++(NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"day_weather"             : @"day_weather",
+             @"night_weather"           : @"night_weather",
+             @"day_air_temperature"     : @"day_air_temperature",
+             @"night_air_temperature"   : @"night_air_temperature"
+             };
+}
+
 @end

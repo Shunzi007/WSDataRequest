@@ -7,12 +7,15 @@
 //
 
 #import "MTLModel.h"
+#import <Mantle.h>
 
-@interface WSCityModel : MTLModel
+@interface WSCityModel : MTLModel<MTLJSONSerializing>
 
-//@property (nonatomic, strong) NSString *cityName;
-//@property (nonatomic, strong) NSString *cityCode;
-//@property (nonatomic, strong) NSString *cityName;
+@property (nonatomic, strong) NSString *cityCode;
+@property (nonatomic, strong) NSString *cityName;
+@property (nonatomic, strong) NSString *provinceName;
+@property (nonatomic, assign) double   longitude;
+@property (nonatomic, assign) double   latitude;
 
 
 @end
