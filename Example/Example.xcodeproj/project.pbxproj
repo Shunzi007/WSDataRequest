@@ -15,6 +15,9 @@
 		630031921B29C4700021677D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630031901B29C4700021677D /* LaunchScreen.xib */; };
 		6300319E1B29C4700021677D /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300319D1B29C4700021677D /* ExampleTests.m */; };
 		630031A91B29C4DE0021677D /* WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 630031A81B29C4DE0021677D /* WSDataRequest.m */; };
+		63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */; };
+		63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */; };
+		63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF45711B2A8E4500C8CD2C /* WSCityModel.m */; };
 		DF120AF2994877D335B8361B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB2F4B565E130B33CB3D4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,12 @@
 		6300319D1B29C4700021677D /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		630031A71B29C4DE0021677D /* WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSDataRequest.h; path = ../WSDataRequest/WSDataRequest.h; sourceTree = "<group>"; };
 		630031A81B29C4DE0021677D /* WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSDataRequest.m; path = ../WSDataRequest/WSDataRequest.m; sourceTree = "<group>"; };
+		63FF456A1B2A819D00C8CD2C /* WSWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWeatherRequest.h; sourceTree = "<group>"; };
+		63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWeatherRequest.m; sourceTree = "<group>"; };
+		63FF456D1B2A8DBF00C8CD2C /* WSWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWeatherModel.h; sourceTree = "<group>"; };
+		63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWeatherModel.m; sourceTree = "<group>"; };
+		63FF45701B2A8E4500C8CD2C /* WSCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCityModel.h; sourceTree = "<group>"; };
+		63FF45711B2A8E4500C8CD2C /* WSCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCityModel.m; sourceTree = "<group>"; };
 		B438737E6CF76D5D414B8F3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				630031AE1B29D2B10021677D /* Request */,
-				630031AF1B29D2BC0021677D /* Object */,
 				630031851B29C4700021677D /* AppDelegate.h */,
 				630031861B29C4700021677D /* AppDelegate.m */,
 				630031881B29C4700021677D /* ViewController.h */,
@@ -161,15 +169,14 @@
 		630031AE1B29D2B10021677D /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				63FF456A1B2A819D00C8CD2C /* WSWeatherRequest.h */,
+				63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */,
+				63FF456D1B2A8DBF00C8CD2C /* WSWeatherModel.h */,
+				63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */,
+				63FF45701B2A8E4500C8CD2C /* WSCityModel.h */,
+				63FF45711B2A8E4500C8CD2C /* WSCityModel.m */,
 			);
 			name = Request;
-			sourceTree = "<group>";
-		};
-		630031AF1B29D2BC0021677D /* Object */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */,
 				6300318A1B29C4700021677D /* ViewController.m in Sources */,
+				63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */,
 				630031871B29C4700021677D /* AppDelegate.m in Sources */,
 				630031841B29C4700021677D /* main.m in Sources */,
+				63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */,
 				630031A91B29C4DE0021677D /* WSDataRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

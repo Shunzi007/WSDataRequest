@@ -7,7 +7,7 @@
 //
 
 #import "WSDataRequest.h"
-NSString *const WSErrorDomain = @"WSDataRequest";
+NSString *const WSErrorDomain = @"WSDataRequestError";
 CGFloat   const OPRequstTimeoutInterval = 5.0;
 
 @implementation WSDataRequest
@@ -43,7 +43,7 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
 
 - (id)responseParse:(id)data
 {
-    return data;
+    return nil;
 }
 
 - (void)sendRequest:(WSDataResponseBlock)response
@@ -57,7 +57,7 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
         [self sendPost:response];
     }
     else {
-        NSError *err = [NSError errorWithDomain:WSErrorDomain code:-1 userInfo:@{NSLocalizedFailureReasonErrorKey: @"unsupport request type."}];
+        NSError *err = [self WSDataRequestErrorWithReason:@"不支持的请求类型"];
         response(nil, err);
     }
 }
@@ -84,7 +84,7 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
             responese(data, nil);
         }
         else {
-            NSError *err = [NSError errorWithDomain:WSErrorDomain code:-1 userInfo:@{NSLocalizedFailureReasonErrorKey: @"unsupport respone data."}];
+            NSError *err = [self WSDataRequestErrorWithReason:@"数据解析错误"];
             responese(nil, err);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -118,12 +118,16 @@ CGFloat   const OPRequstTimeoutInterval = 5.0;
             responese(parsedData, nil);
         }
         else {
-            NSError *err = [NSError errorWithDomain:WSErrorDomain code:-1 userInfo:@{NSLocalizedFailureReasonErrorKey: @"unsupport respone data."}];
+            NSError *err = [self WSDataRequestErrorWithReason:@"数据解析错误"];
             responese(nil, err);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         responese(nil, error);
     }];
+}
+
+- (NSError *)WSDataRequestErrorWithReason:(NSString *)reason {
+    return [NSError errorWithDomain:WSErrorDomain code:-1 userInfo:@{NSLocalizedFailureReasonErrorKey: reason}];
 }
 
 @end
