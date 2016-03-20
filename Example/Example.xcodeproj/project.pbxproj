@@ -60,7 +60,6 @@
 		B438737E6CF76D5D414B8F3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+WSDataRequest.h"; path = "../WSDataRequest/NSObject+WSDataRequest.h"; sourceTree = "<group>"; };
 		CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+WSDataRequest.m"; path = "../WSDataRequest/NSObject+WSDataRequest.m"; sourceTree = "<group>"; };
-		CA62D4D71C9E668C00FF6754 /* WSDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDataRequest.h; sourceTree = "<group>"; };
 		CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WSDataRequest.podspec; path = ../WSDataRequest.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +166,6 @@
 		630031AA1B29C4E70021677D /* WSDataRequest */ = {
 			isa = PBXGroup;
 			children = (
-				CA62D4D71C9E668C00FF6754 /* WSDataRequest.h */,
 				CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */,
 				CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */,
 			);

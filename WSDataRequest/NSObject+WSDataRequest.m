@@ -12,6 +12,9 @@
 NSString *const WSErrorDomain = @"WSDataRequestError";
 double   const WSRequstTimeoutInterval = 5.0;
 
+WSDataRequestType   _requestType;
+double              _requestTimeOut;
+
 static const void *typeKey = &typeKey;
 static const void *timeOutKey = &timeOutKey;
 static const void *requestURLKey = &requestURLKey;
@@ -162,23 +165,23 @@ static const void *requestParametersKey = &requestParametersKey;
 #pragma mark - setter&getter
 
 - (void)setType:(WSDataRequestType)type {
-    objc_setAssociatedObject(self, typeKey, [NSNumber numberWithInt:type], OBJC_ASSOCIATION_ASSIGN);
+    _requestType = type;
 }
 
 - (WSDataRequestType)type {
-    return [objc_getAssociatedObject(self, typeKey) intValue];
+    return _requestType;
 }
 
 - (void)setTimeOut:(double)timeOut {
-    objc_setAssociatedObject(self, timeOutKey, [NSNumber numberWithDouble:timeOut], OBJC_ASSOCIATION_ASSIGN);
+    _requestTimeOut = timeOut;
 }
-- (double)timeOut {
-    return [objc_getAssociatedObject(self, typeKey) doubleValue];
 
+- (double)timeOut {
+    return _requestTimeOut
 }
 
 - (void)setRequestURL:(NSString *)requestURL {
-    objc_setAssociatedObject(self, requestURLKey, requestURL, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, requestURLKey, requestURL, OBJC_ASSOCIATION_COPY);
 }
 
 - (NSString *)requestURL {
@@ -186,7 +189,7 @@ static const void *requestParametersKey = &requestParametersKey;
 }
 
 - (void)setPath:(NSString *)path {
-    objc_setAssociatedObject(self, pathKey, path, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, pathKey, path, OBJC_ASSOCIATION_COPY);
 }
 
 - (NSString *)path {
