@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WSDataRequest.h"
+#import "NSObject+WSDataRequest.h"
 
 @interface WSWeatherRequest : NSObject
 

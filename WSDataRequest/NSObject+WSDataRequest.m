@@ -177,7 +177,7 @@ static const void *requestParametersKey = &requestParametersKey;
 }
 
 - (double)timeOut {
-    return _requestTimeOut
+    return _requestTimeOut;
 }
 
 - (void)setRequestURL:(NSString *)requestURL {
