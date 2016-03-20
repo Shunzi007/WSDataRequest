@@ -6,9 +6,12 @@
 //  Copyright © 2016年 wangshun. All rights reserved.
 //
 
-#ifndef WSDataRequest_h
-#define WSDataRequest_h
+#import <Foundation/Foundation.h>
 
+#if __has_include(<WSDataRequest/WSDataRequest.h>)
+FOUNDATION_EXPORT double WSDataRequestVersionNumber;
+FOUNDATION_EXPORT const unsigned char WSDataRequestVersionString[];
+#import <WSDataRequest/NSObject+WSDataRequest.h>
+#else
 #import "NSObject+WSDataRequest.h"
-
 #endif /* WSDataRequest_h */

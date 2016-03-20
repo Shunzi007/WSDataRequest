@@ -1,22 +1,22 @@
 Pod::Spec.new do |s|
 
-  s.name         = "WSDataRequest"
-  s.version      = "1.0.0"
-  s.summary      = "A http request tool encapsulated with AFNetWorking."
+  s.name        = "WSDataRequest"
+  s.version     = "2.0.0"
+  s.summary     = "A http request tool encapsulated with AFNetWorking."
 
-  s.homepage     = "https://github.com/Shunzi007/WSDataRequest"
-  s.license      = "MIT"
+  s.homepage    = "https://github.com/Shunzi007/WSDataRequest"
+  s.license   	= { :type => 'MIT', :file => 'LICENSE' }
   
 
-  s.author             = { "王顺" => "360752546@qq.com" }
-  s.ios.deployment_target = "6.0"
+  s.author      = { "王顺" => "360752546@qq.com" }
+  s.platform    = :ios, '6.0'
   
-  s.source       = { :git => "https://github.com/Shunzi007/WSDataRequest.git", :tag => s.version.to_s }
+  s.source      = { :git => "https://github.com/Shunzi007/WSDataRequest.git", :tag => s.version.to_s }
 
-  s.source_files  = "WSDataRequest/*.{h,m}"
+  s.source_files= "WSDataRequest/*.{h,m}"
   
 
-  s.frameworks  = "UIKit", "Foundation"
-  s.dependency "AFNetworking", “YYModel”
+  s.frameworks  = 'Foundation'
+  s.dependency 'AFNetworking'
 
 end

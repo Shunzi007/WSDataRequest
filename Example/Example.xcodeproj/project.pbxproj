@@ -19,6 +19,7 @@
 		63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */; };
 		63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF45711B2A8E4500C8CD2C /* WSCityModel.m */; };
 		CA62D4D31C9DB74200FF6754 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
+		CA62D4D91C9E815700FF6754 /* WSDataRequest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */; };
 		DF120AF2994877D335B8361B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB2F4B565E130B33CB3D4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+WSDataRequest.h"; path = "../WSDataRequest/NSObject+WSDataRequest.h"; sourceTree = "<group>"; };
 		CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+WSDataRequest.m"; path = "../WSDataRequest/NSObject+WSDataRequest.m"; sourceTree = "<group>"; };
 		CA62D4D71C9E668C00FF6754 /* WSDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDataRequest.h; sourceTree = "<group>"; };
+		CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WSDataRequest.podspec; path = ../WSDataRequest.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		630031751B29C4700021677D = {
 			isa = PBXGroup;
 			children = (
+				CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */,
 				630031AA1B29C4E70021677D /* WSDataRequest */,
 				630031801B29C4700021677D /* Example */,
 				6300319A1B29C4700021677D /* ExampleTests */,
@@ -271,6 +274,7 @@
 			files = (
 				6300318D1B29C4700021677D /* Main.storyboard in Resources */,
 				630031921B29C4700021677D /* LaunchScreen.xib in Resources */,
+				CA62D4D91C9E815700FF6754 /* WSDataRequest.podspec in Resources */,
 				6300318F1B29C4700021677D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
