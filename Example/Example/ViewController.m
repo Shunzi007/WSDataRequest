@@ -19,6 +19,7 @@
     [super viewDidLoad];
   
 };
+
 - (IBAction)action:(id)sender {
     
     WSWeatherRequest *request = [WSWeatherRequest request];

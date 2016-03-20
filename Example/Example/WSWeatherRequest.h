@@ -6,9 +6,10 @@
 //  Copyright © 2015年 wangshun. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "WSDataRequest.h"
 
-@interface WSWeatherRequest : WSDataRequest
+@interface WSWeatherRequest : NSObject
 
 @property (nonatomic, strong) NSString *appID;
 @property (nonatomic, strong) NSString *sign;

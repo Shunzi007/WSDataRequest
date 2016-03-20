@@ -17,10 +17,10 @@
 {
     self = [super init];
     if (self) {
-        self.requestURL = @"http://route.showapi.com/9-2";
-//        self.path =@"/9-2";
+        self.requestURL = @"http://route.showapi.com";
+        self.path =@"/9-2";
         self.type = WSDataRequestTypePost;
-//        self.timeOut = 0.01;
+        self.timeOut = 3;
     }
     return self;
 }
@@ -35,17 +35,17 @@
 - (NSDictionary *)jsonParameters {
     return @{
              @"areaid"            : @"101291401",
-             @"showapi_timestamp" : @"2015-6-1200:00:00",
+             @"showapi_timestamp" : @"2015-12-12 00:00:00",
              };
 }
 
 
 - (id)responseParse:(id)data {
     if (![data isKindOfClass:[NSDictionary class]]) {
-        return [WSDataRequest WSDataRequestErrorWithReason:@"接口错误"];
+        return [WSWeatherRequest errorWithErrorCode:-10001 withReason:@"接口错误"];
     }
     if ([[data objectForKey:@"showapi_res_error"] length]) {
-        return [WSDataRequest WSDataRequestErrorWithReason:[data objectForKey:@"showapi_res_error"]];
+        return [WSWeatherRequest errorWithErrorCode:-10001 withReason:[data objectForKey:@"showapi_res_error"]];
     }
     NSError *err = nil;
     NSDictionary *dataDict = [data objectForKey:@"showapi_res_body"];
