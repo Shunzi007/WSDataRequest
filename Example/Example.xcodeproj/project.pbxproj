@@ -391,13 +391,12 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage update";
 		};
 		E2CDC07F442A97485B76C38A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
