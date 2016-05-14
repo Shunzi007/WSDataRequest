@@ -26,7 +26,6 @@
 		CA75638E1CE7862500B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
 		CA7563911CE7871E00B92288 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
 		CA7563931CE7874C00B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
-		CA7563971CE7923400B92288 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7563961CE7923400B92288 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,6 @@
 		CA7563801CE77CC900B92288 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../Library/Developer/Xcode/DerivedData/Example-gdxijjracmmkmkceaehskhlssrnb/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
 		CA7563821CE77CEC00B92288 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Example-gdxijjracmmkmkceaehskhlssrnb/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
 		CA75638D1CE7862500B92288 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
-		CA7563961CE7923400B92288 /* AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = Carthage/Build/iOS/AFNetworking.framework/Headers/AFNetworking.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +131,6 @@
 		630031751B29C4700021677D = {
 			isa = PBXGroup;
 			children = (
-				CA7563961CE7923400B92288 /* AFNetworking.h */,
 				CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */,
 				630031AA1B29C4E70021677D /* WSDataRequest */,
 				630031801B29C4700021677D /* Example */,
@@ -236,7 +233,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7563971CE7923400B92288 /* AFNetworking.h in Headers */,
 				CA7563741CE77BC100B92288 /* WSDataRequest.h in Headers */,
 				CA75638B1CE7817E00B92288 /* NSObject+WSDataRequest.h in Headers */,
 			);
@@ -592,7 +588,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = WangShun.WSDataRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,7 +614,6 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = WangShun.WSDataRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
