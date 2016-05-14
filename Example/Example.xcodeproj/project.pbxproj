@@ -25,7 +25,7 @@
 		CA75638B1CE7817E00B92288 /* NSObject+WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA75638E1CE7862500B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
 		CA7563911CE7871E00B92288 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
-		CA7563931CE7874C00B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
+		CA7BA7701CE79DDF004816A3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7563931CE7874C00B92288 /* AFNetworking.framework in Frameworks */,
+				CA7BA7701CE79DDF004816A3 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +272,7 @@
 				CA75636D1CE77BC100B92288 /* Frameworks */,
 				CA75636E1CE77BC100B92288 /* Headers */,
 				CA75636F1CE77BC100B92288 /* Resources */,
+				CA7BA7721CE79E00004816A3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -371,6 +372,20 @@
 			showEnvVarsInLog = 0;
 		};
 		CA75638F1CE7866000B92288 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		CA7BA7721CE79E00004816A3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
