@@ -8,6 +8,8 @@
 
 #import "NSObject+WSDataRequest.h"
 #import <objc/runtime.h>
+#import <AFNetworking/AFNetworking.h>
+
 
 NSString *const WSErrorDomain = @"WSDataRequestError";
 double   const WSRequstTimeoutInterval = 5.0;

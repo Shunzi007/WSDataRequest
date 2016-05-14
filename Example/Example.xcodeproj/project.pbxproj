@@ -13,25 +13,44 @@
 		6300318D1B29C4700021677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6300318B1B29C4700021677D /* Main.storyboard */; };
 		6300318F1B29C4700021677D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6300318E1B29C4700021677D /* Images.xcassets */; };
 		630031921B29C4700021677D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630031901B29C4700021677D /* LaunchScreen.xib */; };
-		6300319E1B29C4700021677D /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300319D1B29C4700021677D /* ExampleTests.m */; };
 		634299241B2B1DDB004EA287 /* WSReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 634299231B2B1DDB004EA287 /* WSReportModel.m */; };
 		63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */; };
 		63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */; };
 		63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF45711B2A8E4500C8CD2C /* WSCityModel.m */; };
 		CA62D4D31C9DB74200FF6754 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
 		CA62D4D91C9E815700FF6754 /* WSDataRequest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */; };
-		DF120AF2994877D335B8361B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCB2F4B565E130B33CB3D4E /* libPods.a */; };
+		CA7563741CE77BC100B92288 /* WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7563731CE77BC100B92288 /* WSDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA7563781CE77BC100B92288 /* WSDataRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7563711CE77BC100B92288 /* WSDataRequest.framework */; };
+		CA75637A1CE77BC100B92288 /* WSDataRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA7563711CE77BC100B92288 /* WSDataRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA75638B1CE7817E00B92288 /* NSObject+WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA75638E1CE7862500B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
+		CA7563911CE7871E00B92288 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
+		CA7563931CE7874C00B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		630031981B29C4700021677D /* PBXContainerItemProxy */ = {
+		CA7563761CE77BC100B92288 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 630031761B29C4700021677D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6300317D1B29C4700021677D;
-			remoteInfo = Example;
+			remoteGlobalIDString = CA7563701CE77BC100B92288;
+			remoteInfo = WSDataRequest;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA7563791CE77BC100B92288 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA75637A1CE77BC100B92288 /* WSDataRequest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22CA92755E73AC3AD2474A84 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +65,6 @@
 		6300318C1B29C4700021677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6300318E1B29C4700021677D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		630031911B29C4700021677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		630031971B29C4700021677D /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6300319C1B29C4700021677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6300319D1B29C4700021677D /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		634299221B2B1DDB004EA287 /* WSReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSReportModel.h; sourceTree = "<group>"; };
@@ -61,6 +79,12 @@
 		CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+WSDataRequest.h"; path = "../WSDataRequest/NSObject+WSDataRequest.h"; sourceTree = "<group>"; };
 		CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+WSDataRequest.m"; path = "../WSDataRequest/NSObject+WSDataRequest.m"; sourceTree = "<group>"; };
 		CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WSDataRequest.podspec; path = ../WSDataRequest.podspec; sourceTree = "<group>"; };
+		CA7563711CE77BC100B92288 /* WSDataRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSDataRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7563731CE77BC100B92288 /* WSDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDataRequest.h; sourceTree = "<group>"; };
+		CA7563751CE77BC100B92288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA7563801CE77CC900B92288 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../Library/Developer/Xcode/DerivedData/Example-gdxijjracmmkmkceaehskhlssrnb/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
+		CA7563821CE77CEC00B92288 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Example-gdxijjracmmkmkceaehskhlssrnb/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
+		CA75638D1CE7862500B92288 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,14 +92,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF120AF2994877D335B8361B /* libPods.a in Frameworks */,
+				CA75638E1CE7862500B92288 /* AFNetworking.framework in Frameworks */,
+				CA7563781CE77BC100B92288 /* WSDataRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		630031941B29C4700021677D /* Frameworks */ = {
+		CA75636D1CE77BC100B92288 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7563931CE7874C00B92288 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +120,9 @@
 		5B73E90D0C9BBB62373D95B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA75638D1CE7862500B92288 /* AFNetworking.framework */,
+				CA7563821CE77CEC00B92288 /* libAFNetworking.a */,
+				CA7563801CE77CC900B92288 /* libPods.a */,
 				4BCB2F4B565E130B33CB3D4E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -106,6 +135,7 @@
 				630031AA1B29C4E70021677D /* WSDataRequest */,
 				630031801B29C4700021677D /* Example */,
 				6300319A1B29C4700021677D /* ExampleTests */,
+				CA7563721CE77BC100B92288 /* WSDataRequest */,
 				6300317F1B29C4700021677D /* Products */,
 				330B0BE940119F6990A9E4C5 /* Pods */,
 				5B73E90D0C9BBB62373D95B8 /* Frameworks */,
@@ -116,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				6300317E1B29C4700021677D /* Example.app */,
-				630031971B29C4700021677D /* ExampleTests.xctest */,
+				CA7563711CE77BC100B92288 /* WSDataRequest.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,7 +217,28 @@
 			name = Request;
 			sourceTree = "<group>";
 		};
+		CA7563721CE77BC100B92288 /* WSDataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CA7563731CE77BC100B92288 /* WSDataRequest.h */,
+				CA7563751CE77BC100B92288 /* Info.plist */,
+			);
+			path = WSDataRequest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA75636E1CE77BC100B92288 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7563741CE77BC100B92288 /* WSDataRequest.h in Headers */,
+				CA75638B1CE7817E00B92288 /* NSObject+WSDataRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		6300317D1B29C4700021677D /* Example */ = {
@@ -200,33 +251,36 @@
 				6300317C1B29C4700021677D /* Resources */,
 				824E44910BACED7BFAD4CEB6 /* Copy Pods Resources */,
 				A308887739E36A867EA2AD95 /* Embed Pods Frameworks */,
+				CA7563791CE77BC100B92288 /* Embed Frameworks */,
+				CA75638F1CE7866000B92288 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CA7563771CE77BC100B92288 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
 			productReference = 6300317E1B29C4700021677D /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		630031961B29C4700021677D /* ExampleTests */ = {
+		CA7563701CE77BC100B92288 /* WSDataRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 630031A41B29C4700021677D /* Build configuration list for PBXNativeTarget "ExampleTests" */;
+			buildConfigurationList = CA75637D1CE77BC100B92288 /* Build configuration list for PBXNativeTarget "WSDataRequest" */;
 			buildPhases = (
-				630031931B29C4700021677D /* Sources */,
-				630031941B29C4700021677D /* Frameworks */,
-				630031951B29C4700021677D /* Resources */,
+				CA75636C1CE77BC100B92288 /* Sources */,
+				CA75636D1CE77BC100B92288 /* Frameworks */,
+				CA75636E1CE77BC100B92288 /* Headers */,
+				CA75636F1CE77BC100B92288 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				630031991B29C4700021677D /* PBXTargetDependency */,
 			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = 630031971B29C4700021677D /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = WSDataRequest;
+			productName = WSDataRequest;
+			productReference = CA7563711CE77BC100B92288 /* WSDataRequest.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,9 +294,8 @@
 					6300317D1B29C4700021677D = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					630031961B29C4700021677D = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = 6300317D1B29C4700021677D;
+					CA7563701CE77BC100B92288 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -260,7 +313,7 @@
 			projectRoot = "";
 			targets = (
 				6300317D1B29C4700021677D /* Example */,
-				630031961B29C4700021677D /* ExampleTests */,
+				CA7563701CE77BC100B92288 /* WSDataRequest */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		630031951B29C4700021677D /* Resources */ = {
+		CA75636F1CE77BC100B92288 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,6 +370,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CA75638F1CE7866000B92288 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		E2CDC07F442A97485B76C38A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,21 +417,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		630031931B29C4700021677D /* Sources */ = {
+		CA75636C1CE77BC100B92288 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6300319E1B29C4700021677D /* ExampleTests.m in Sources */,
+				CA7563911CE7871E00B92288 /* NSObject+WSDataRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		630031991B29C4700021677D /* PBXTargetDependency */ = {
+		CA7563771CE77BC100B92288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6300317D1B29C4700021677D /* Example */;
-			targetProxy = 630031981B29C4700021677D /* PBXContainerItemProxy */;
+			target = CA7563701CE77BC100B92288 /* WSDataRequest */;
+			targetProxy = CA7563761CE77BC100B92288 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -476,6 +543,10 @@
 			baseConfigurationReference = 22CA92755E73AC3AD2474A84 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangshun.$(PRODUCT_NAME:rfc1034identifier)";
@@ -488,6 +559,10 @@
 			baseConfigurationReference = B438737E6CF76D5D414B8F3E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "wangshun.$(PRODUCT_NAME:rfc1034identifier)";
@@ -495,39 +570,56 @@
 			};
 			name = Release;
 		};
-		630031A51B29C4700021677D /* Debug */ = {
+		CA75637B1CE77BC100B92288 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
+				INFOPLIST_FILE = WSDataRequest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "wangshun.$(PRODUCT_NAME:rfc1034identifier)";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = WangShun.WSDataRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		630031A61B29C4700021677D /* Release */ = {
+		CA75637C1CE77BC100B92288 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
+				INFOPLIST_FILE = WSDataRequest/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "wangshun.$(PRODUCT_NAME:rfc1034identifier)";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = WangShun.WSDataRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -552,11 +644,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		630031A41B29C4700021677D /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
+		CA75637D1CE77BC100B92288 /* Build configuration list for PBXNativeTarget "WSDataRequest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				630031A51B29C4700021677D /* Debug */,
-				630031A61B29C4700021677D /* Release */,
+				CA75637B1CE77BC100B92288 /* Debug */,
+				CA75637C1CE77BC100B92288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
