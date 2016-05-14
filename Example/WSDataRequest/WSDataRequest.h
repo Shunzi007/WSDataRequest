@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSObject+WSDataRequest.h"
 
 //! Project version number for WSDataRequest.
 FOUNDATION_EXPORT double WSDataRequestVersionNumber;
