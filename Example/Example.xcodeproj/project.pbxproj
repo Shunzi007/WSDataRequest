@@ -268,11 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA75637D1CE77BC100B92288 /* Build configuration list for PBXNativeTarget "WSDataRequest" */;
 			buildPhases = (
+				CA7BA7721CE79E00004816A3 /* Carthage Update */,
 				CA75636C1CE77BC100B92288 /* Sources */,
 				CA75636D1CE77BC100B92288 /* Frameworks */,
 				CA75636E1CE77BC100B92288 /* Headers */,
 				CA75636F1CE77BC100B92288 /* Resources */,
-				CA7BA7721CE79E00004816A3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -385,13 +385,14 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
-		CA7BA7721CE79E00004816A3 /* ShellScript */ = {
+		CA7BA7721CE79E00004816A3 /* Carthage Update */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Carthage Update";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
