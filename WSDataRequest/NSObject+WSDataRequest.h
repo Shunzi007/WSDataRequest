@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AFNetworking/AFNetworking.h>
 
 typedef void(^WSDataResponseBlock)(id data, NSError *error);
 

@@ -8,7 +8,6 @@
 
 #import "NSObject+WSDataRequest.h"
 #import <objc/runtime.h>
-#import <AFNetworking/AFNetworking.h>
 
 
 NSString *const WSErrorDomain = @"WSDataRequestError";

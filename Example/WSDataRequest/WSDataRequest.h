@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AFNetworking/AFNetworking.h>
-
 
 //! Project version number for WSDataRequest.
 FOUNDATION_EXPORT double WSDataRequestVersionNumber;
