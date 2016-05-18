@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author      = { "王顺" => "360752546@qq.com" }
   s.platform    = :ios, '7.0'
   
-  s.source      = { :git => "https://github.com/Shunzi007/WSDataRequest.git", :tag => s.version.to_s }
+  s.source      = { :git => "https://github.com/Shunzi007/WSDataRequest.git", :tag => s.version. }
 
   s.source_files= "WSDataRequest/*.{h,m}"
   
