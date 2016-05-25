@@ -18,15 +18,18 @@
 		63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */; };
 		63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF45711B2A8E4500C8CD2C /* WSCityModel.m */; };
 		B8EF62B635E991A787214660 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01F2D914931237BF5169CD1 /* Pods_Example.framework */; };
-		CA62D4D31C9DB74200FF6754 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
 		CA62D4D91C9E815700FF6754 /* WSDataRequest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */; };
-		CA7563741CE77BC100B92288 /* WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7563731CE77BC100B92288 /* WSDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7563781CE77BC100B92288 /* WSDataRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7563711CE77BC100B92288 /* WSDataRequest.framework */; };
 		CA75637A1CE77BC100B92288 /* WSDataRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA7563711CE77BC100B92288 /* WSDataRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CA75638B1CE7817E00B92288 /* NSObject+WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA75638E1CE7862500B92288 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
-		CA7563911CE7871E00B92288 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */; };
 		CA7BA7701CE79DDF004816A3 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75638D1CE7862500B92288 /* AFNetworking.framework */; };
+		CAEFCAF61CF5A08500882455 /* NSError+WSDataRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEFCAF11CF5A08500882455 /* NSError+WSDataRequestError.h */; };
+		CAEFCAF71CF5A08500882455 /* NSError+WSDataRequestError.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEFCAF21CF5A08500882455 /* NSError+WSDataRequestError.m */; };
+		CAEFCAF81CF5A08500882455 /* NSError+WSDataRequestError.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEFCAF21CF5A08500882455 /* NSError+WSDataRequestError.m */; };
+		CAEFCAF91CF5A08500882455 /* NSObject+WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEFCAF31CF5A08500882455 /* NSObject+WSDataRequest.h */; };
+		CAEFCAFA1CF5A08500882455 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEFCAF41CF5A08500882455 /* NSObject+WSDataRequest.m */; };
+		CAEFCAFB1CF5A08500882455 /* NSObject+WSDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEFCAF41CF5A08500882455 /* NSObject+WSDataRequest.m */; };
+		CAEFCAFC1CF5A08500882455 /* WSDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEFCAF51CF5A08500882455 /* WSDataRequest.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,15 +79,17 @@
 		63FF45711B2A8E4500C8CD2C /* WSCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCityModel.m; sourceTree = "<group>"; };
 		7AA0AE9E8E26CA0E0FEB0572 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C1E1E5C9EB1C03A7EA8929C5 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+WSDataRequest.h"; path = "../WSDataRequest/NSObject+WSDataRequest.h"; sourceTree = "<group>"; };
-		CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+WSDataRequest.m"; path = "../WSDataRequest/NSObject+WSDataRequest.m"; sourceTree = "<group>"; };
 		CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WSDataRequest.podspec; path = ../WSDataRequest.podspec; sourceTree = "<group>"; };
 		CA7563711CE77BC100B92288 /* WSDataRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSDataRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA7563731CE77BC100B92288 /* WSDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDataRequest.h; sourceTree = "<group>"; };
 		CA7563751CE77BC100B92288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7563801CE77CC900B92288 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../Library/Developer/Xcode/DerivedData/Example-gdxijjracmmkmkceaehskhlssrnb/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
 		CA7563821CE77CEC00B92288 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/Example-gdxijjracmmkmkceaehskhlssrnb/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
 		CA75638D1CE7862500B92288 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		CAEFCAF11CF5A08500882455 /* NSError+WSDataRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+WSDataRequestError.h"; sourceTree = "<group>"; };
+		CAEFCAF21CF5A08500882455 /* NSError+WSDataRequestError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+WSDataRequestError.m"; sourceTree = "<group>"; };
+		CAEFCAF31CF5A08500882455 /* NSObject+WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WSDataRequest.h"; sourceTree = "<group>"; };
+		CAEFCAF41CF5A08500882455 /* NSObject+WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WSDataRequest.m"; sourceTree = "<group>"; };
+		CAEFCAF51CF5A08500882455 /* WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDataRequest.h; sourceTree = "<group>"; };
 		F01F2D914931237BF5169CD1 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */,
-				630031AA1B29C4E70021677D /* WSDataRequest */,
+				CAEFCAF01CF5A08500882455 /* WSDataRequest */,
 				630031801B29C4700021677D /* Example */,
 				6300319A1B29C4700021677D /* ExampleTests */,
 				CA7563721CE77BC100B92288 /* WSDataRequest */,
@@ -195,15 +200,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		630031AA1B29C4E70021677D /* WSDataRequest */ = {
-			isa = PBXGroup;
-			children = (
-				CA62D4D11C9DB74200FF6754 /* NSObject+WSDataRequest.h */,
-				CA62D4D21C9DB74200FF6754 /* NSObject+WSDataRequest.m */,
-			);
-			name = WSDataRequest;
-			sourceTree = "<group>";
-		};
 		630031AE1B29D2B10021677D /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,10 +218,22 @@
 		CA7563721CE77BC100B92288 /* WSDataRequest */ = {
 			isa = PBXGroup;
 			children = (
-				CA7563731CE77BC100B92288 /* WSDataRequest.h */,
 				CA7563751CE77BC100B92288 /* Info.plist */,
 			);
 			path = WSDataRequest;
+			sourceTree = "<group>";
+		};
+		CAEFCAF01CF5A08500882455 /* WSDataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CAEFCAF51CF5A08500882455 /* WSDataRequest.h */,
+				CAEFCAF31CF5A08500882455 /* NSObject+WSDataRequest.h */,
+				CAEFCAF41CF5A08500882455 /* NSObject+WSDataRequest.m */,
+				CAEFCAF11CF5A08500882455 /* NSError+WSDataRequestError.h */,
+				CAEFCAF21CF5A08500882455 /* NSError+WSDataRequestError.m */,
+			);
+			name = WSDataRequest;
+			path = ../WSDataRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +243,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7563741CE77BC100B92288 /* WSDataRequest.h in Headers */,
-				CA75638B1CE7817E00B92288 /* NSObject+WSDataRequest.h in Headers */,
+				CAEFCAF61CF5A08500882455 /* NSError+WSDataRequestError.h in Headers */,
+				CAEFCAFC1CF5A08500882455 /* WSDataRequest.h in Headers */,
+				CAEFCAF91CF5A08500882455 /* NSObject+WSDataRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +435,9 @@
 				63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */,
 				634299241B2B1DDB004EA287 /* WSReportModel.m in Sources */,
 				6300318A1B29C4700021677D /* ViewController.m in Sources */,
-				CA62D4D31C9DB74200FF6754 /* NSObject+WSDataRequest.m in Sources */,
+				CAEFCAFA1CF5A08500882455 /* NSObject+WSDataRequest.m in Sources */,
 				63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */,
+				CAEFCAF71CF5A08500882455 /* NSError+WSDataRequestError.m in Sources */,
 				630031871B29C4700021677D /* AppDelegate.m in Sources */,
 				630031841B29C4700021677D /* main.m in Sources */,
 				63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */,
@@ -438,7 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7563911CE7871E00B92288 /* NSObject+WSDataRequest.m in Sources */,
+				CAEFCAF81CF5A08500882455 /* NSError+WSDataRequestError.m in Sources */,
+				CAEFCAFB1CF5A08500882455 /* NSObject+WSDataRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

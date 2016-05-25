@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "WSDataRequest"
-  s.version     = "2.1.1"
+  s.version     = "2.1.2"
   s.summary     = "A http request tool encapsulated with AFNetWorking."
 
   s.homepage    = "https://github.com/Shunzi007/WSDataRequest"
