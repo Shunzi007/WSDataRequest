@@ -7,7 +7,7 @@
 //
 
 #import "MTLModel.h"
-#import <Mantle.h>
+#import <Mantle/Mantle.h>
 
 @interface WSWeatherModel : MTLModel <MTLJSONSerializing>
 

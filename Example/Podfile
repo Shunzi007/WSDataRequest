@@ -1,4 +1,11 @@
+use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+def pods
+    pod 'Mantle'
+    pod 'YYModel'
+end
 
-pod 'YYModel'
-pod 'Mantle'
+target 'Example' do
+    pods
+end

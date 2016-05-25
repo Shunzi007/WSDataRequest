@@ -25,7 +25,7 @@
     WSWeatherRequest *request = [WSWeatherRequest request];
     [request sendRequest:^(id data, NSError *error) {
         if (error) {
-            NSLog(@"%@", error.localizedDescription);
+            NSLog(@"%@", error.localizedFailureReason);
         }else {
             NSLog(@"%@", data);
         }

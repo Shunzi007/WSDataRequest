@@ -7,7 +7,7 @@
 //
 
 #import "MTLModel.h"
-#import <Mantle.h>
+#import "Mantle.h"
 
 @interface WSCityModel : MTLModel<MTLJSONSerializing>
 

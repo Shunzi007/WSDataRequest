@@ -61,7 +61,11 @@ static const void *requestParametersKey = &requestParametersKey;
 
 - (id)responseParse:(id)data
 {
-    return nil;
+    return data;
+}
+
+- (NSError *)responseError:(NSError *)error {
+    return error;
 }
 
 - (void)sendRequest:(WSDataResponseBlock)response
@@ -112,7 +116,7 @@ static const void *requestParametersKey = &requestParametersKey;
             responese(nil, err);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        responese(nil, error);
+        responese(nil, [self responseError:error]);
     }];
     
 }
@@ -153,7 +157,7 @@ static const void *requestParametersKey = &requestParametersKey;
             responese(nil, err);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        responese(nil, error);
+        responese(nil, [self responseError:error]);
     }];
 
 }

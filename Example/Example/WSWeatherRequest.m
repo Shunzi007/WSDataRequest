@@ -56,5 +56,11 @@
     return report;
 }
 
+- (NSError *)responseError:(NSError *)error {
+    if (error.code == -1001) {
+        error = [WSWeatherRequest errorWithErrorCode:-1001 withReason:@"time out!"];
+    }
+    return error;
+}
 
 @end

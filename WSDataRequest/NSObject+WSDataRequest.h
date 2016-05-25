@@ -32,5 +32,7 @@ typedef enum {
 
 - (void)sendRequest:(WSDataResponseBlock)response;
 - (id)responseParse:(id)data;
+- (NSError *)responseError:(NSError *)error;
+
 
 @end
