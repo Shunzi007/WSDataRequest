@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "WSDataRequest"
-  s.version     = "2.1.2"
+  s.version     = "2.2.0"
   s.summary     = "A http request tool encapsulated with AFNetWorking."
 
   s.homepage    = "https://github.com/Shunzi007/WSDataRequest"
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   
 
   s.author      = { "王顺" => "360752546@qq.com" }
-  s.platform    = :ios, '7.0'
+  s.platform    = :ios, '8.0'
   
   s.source      = { :git => "https://github.com/Shunzi007/WSDataRequest.git", :tag => s.version }
 
