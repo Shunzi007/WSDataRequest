@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "WSWeatherRequest.h"
+#import "TestRequest.h"
 
 @interface ViewController ()
 
@@ -22,7 +22,7 @@
 
 - (IBAction)action:(id)sender {
     
-    WSWeatherRequest *request = [WSWeatherRequest request];
+    TestRequest *request = [TestRequest request];
     [request sendRequest:^(id data, NSError *error) {
         if (error) {
             NSLog(@"%@", error.localizedFailureReason);

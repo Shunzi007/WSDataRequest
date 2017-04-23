@@ -91,6 +91,10 @@ static const void *requestParametersKey = &requestParametersKey;
         manager.responseSerializer = self.responseSerializer;
     }
     
+    manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    manager.securityPolicy.allowInvalidCertificates = YES;
+    manager.securityPolicy.validatesDomainName = NO;
+    
     if (self.acceptableContentTypes) {
         manager.responseSerializer.acceptableContentTypes = self.acceptableContentTypes;
     }
@@ -124,6 +128,10 @@ static const void *requestParametersKey = &requestParametersKey;
 - (void)sendPost:(WSDataResponseBlock)responese
 {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    
+    manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+    manager.securityPolicy.allowInvalidCertificates = YES;
+    manager.securityPolicy.validatesDomainName = NO;
     
     if (self.responseSerializer) {
         manager.responseSerializer = self.responseSerializer;

@@ -13,11 +13,7 @@
 		6300318D1B29C4700021677D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6300318B1B29C4700021677D /* Main.storyboard */; };
 		6300318F1B29C4700021677D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6300318E1B29C4700021677D /* Images.xcassets */; };
 		630031921B29C4700021677D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630031901B29C4700021677D /* LaunchScreen.xib */; };
-		634299241B2B1DDB004EA287 /* WSReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 634299231B2B1DDB004EA287 /* WSReportModel.m */; };
-		63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */; };
-		63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */; };
-		63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FF45711B2A8E4500C8CD2C /* WSCityModel.m */; };
-		B8EF62B635E991A787214660 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01F2D914931237BF5169CD1 /* Pods_Example.framework */; };
+		CA1CCB061EA9A4C300083594 /* TestRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1CCB051EA9A4C300083594 /* TestRequest.m */; };
 		CA62D4D91C9E815700FF6754 /* WSDataRequest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */; };
 		CA7563781CE77BC100B92288 /* WSDataRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7563711CE77BC100B92288 /* WSDataRequest.framework */; };
 		CA75637A1CE77BC100B92288 /* WSDataRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA7563711CE77BC100B92288 /* WSDataRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -69,16 +65,8 @@
 		630031911B29C4700021677D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6300319C1B29C4700021677D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6300319D1B29C4700021677D /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
-		634299221B2B1DDB004EA287 /* WSReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSReportModel.h; sourceTree = "<group>"; };
-		634299231B2B1DDB004EA287 /* WSReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSReportModel.m; sourceTree = "<group>"; };
-		63FF456A1B2A819D00C8CD2C /* WSWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWeatherRequest.h; sourceTree = "<group>"; };
-		63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWeatherRequest.m; sourceTree = "<group>"; };
-		63FF456D1B2A8DBF00C8CD2C /* WSWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWeatherModel.h; sourceTree = "<group>"; };
-		63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWeatherModel.m; sourceTree = "<group>"; };
-		63FF45701B2A8E4500C8CD2C /* WSCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCityModel.h; sourceTree = "<group>"; };
-		63FF45711B2A8E4500C8CD2C /* WSCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCityModel.m; sourceTree = "<group>"; };
-		7AA0AE9E8E26CA0E0FEB0572 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C1E1E5C9EB1C03A7EA8929C5 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		CA1CCB041EA9A4C300083594 /* TestRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRequest.h; sourceTree = "<group>"; };
+		CA1CCB051EA9A4C300083594 /* TestRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestRequest.m; sourceTree = "<group>"; };
 		CA62D4D81C9E815700FF6754 /* WSDataRequest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = WSDataRequest.podspec; path = ../WSDataRequest.podspec; sourceTree = "<group>"; };
 		CA7563711CE77BC100B92288 /* WSDataRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WSDataRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7563751CE77BC100B92288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,7 +78,6 @@
 		CAEFCAF31CF5A08500882455 /* NSObject+WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WSDataRequest.h"; sourceTree = "<group>"; };
 		CAEFCAF41CF5A08500882455 /* NSObject+WSDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WSDataRequest.m"; sourceTree = "<group>"; };
 		CAEFCAF51CF5A08500882455 /* WSDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDataRequest.h; sourceTree = "<group>"; };
-		F01F2D914931237BF5169CD1 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +87,6 @@
 			files = (
 				CA75638E1CE7862500B92288 /* AFNetworking.framework in Frameworks */,
 				CA7563781CE77BC100B92288 /* WSDataRequest.framework in Frameworks */,
-				B8EF62B635E991A787214660 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,18 +107,8 @@
 				CA75638D1CE7862500B92288 /* AFNetworking.framework */,
 				CA7563821CE77CEC00B92288 /* libAFNetworking.a */,
 				CA7563801CE77CC900B92288 /* libPods.a */,
-				F01F2D914931237BF5169CD1 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5EF2E2E686E3F384E4793149 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7AA0AE9E8E26CA0E0FEB0572 /* Pods-Example.debug.xcconfig */,
-				C1E1E5C9EB1C03A7EA8929C5 /* Pods-Example.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		630031751B29C4700021677D = {
@@ -145,7 +121,6 @@
 				CA7563721CE77BC100B92288 /* WSDataRequest */,
 				6300317F1B29C4700021677D /* Products */,
 				5B73E90D0C9BBB62373D95B8 /* Frameworks */,
-				5EF2E2E686E3F384E4793149 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,11 +136,12 @@
 		630031801B29C4700021677D /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				630031AE1B29D2B10021677D /* Request */,
 				630031851B29C4700021677D /* AppDelegate.h */,
 				630031861B29C4700021677D /* AppDelegate.m */,
 				630031881B29C4700021677D /* ViewController.h */,
 				630031891B29C4700021677D /* ViewController.m */,
+				CA1CCB041EA9A4C300083594 /* TestRequest.h */,
+				CA1CCB051EA9A4C300083594 /* TestRequest.m */,
 				6300318B1B29C4700021677D /* Main.storyboard */,
 				6300318E1B29C4700021677D /* Images.xcassets */,
 				630031901B29C4700021677D /* LaunchScreen.xib */,
@@ -198,21 +174,6 @@
 				6300319C1B29C4700021677D /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		630031AE1B29D2B10021677D /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				63FF456A1B2A819D00C8CD2C /* WSWeatherRequest.h */,
-				63FF456B1B2A819D00C8CD2C /* WSWeatherRequest.m */,
-				634299221B2B1DDB004EA287 /* WSReportModel.h */,
-				634299231B2B1DDB004EA287 /* WSReportModel.m */,
-				63FF456D1B2A8DBF00C8CD2C /* WSWeatherModel.h */,
-				63FF456E1B2A8DBF00C8CD2C /* WSWeatherModel.m */,
-				63FF45701B2A8E4500C8CD2C /* WSCityModel.h */,
-				63FF45711B2A8E4500C8CD2C /* WSCityModel.m */,
-			);
-			name = Request;
 			sourceTree = "<group>";
 		};
 		CA7563721CE77BC100B92288 /* WSDataRequest */ = {
@@ -256,14 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 630031A11B29C4700021677D /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				6CFDF47934AA01C5E3B59F07 /* 📦 Check Pods Manifest.lock */,
 				6300317A1B29C4700021677D /* Sources */,
 				6300317B1B29C4700021677D /* Frameworks */,
 				6300317C1B29C4700021677D /* Resources */,
 				CA7563791CE77BC100B92288 /* Embed Frameworks */,
 				CA75638F1CE7866000B92288 /* ShellScript */,
-				C6E86548E52456139E4C808F /* 📦 Embed Pods Frameworks */,
-				9A37D8D46DFBFC56B6901852 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,6 +263,7 @@
 				TargetAttributes = {
 					6300317D1B29C4700021677D = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H44ZSTMC6S;
 					};
 					CA7563701CE77BC100B92288 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -352,51 +311,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6CFDF47934AA01C5E3B59F07 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9A37D8D46DFBFC56B6901852 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C6E86548E52456139E4C808F /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CA75638F1CE7866000B92288 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,15 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FF456F1B2A8DBF00C8CD2C /* WSWeatherModel.m in Sources */,
-				634299241B2B1DDB004EA287 /* WSReportModel.m in Sources */,
 				6300318A1B29C4700021677D /* ViewController.m in Sources */,
+				CA1CCB061EA9A4C300083594 /* TestRequest.m in Sources */,
 				CAEFCAFA1CF5A08500882455 /* NSObject+WSDataRequest.m in Sources */,
-				63FF45721B2A8E4500C8CD2C /* WSCityModel.m in Sources */,
 				CAEFCAF71CF5A08500882455 /* NSError+WSDataRequestError.m in Sources */,
 				630031871B29C4700021677D /* AppDelegate.m in Sources */,
 				630031841B29C4700021677D /* main.m in Sources */,
-				63FF456C1B2A819D00C8CD2C /* WSWeatherRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,32 +479,32 @@
 		};
 		630031A21B29C4700021677D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AA0AE9E8E26CA0E0FEB0572 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H44ZSTMC6S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "wangshun.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = wangshun.WSDataRequest.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		630031A31B29C4700021677D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1E1E5C9EB1C03A7EA8929C5 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H44ZSTMC6S;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "wangshun.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = wangshun.WSDataRequest.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
